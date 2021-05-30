@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <nav class="demo-nav-wrap" ref="nav_box">
+            <ul class="demo-nav-list" @click="handleNavClick" :style="pointerStyle">
+                <li class="demo-nav-item" :data-idx="index" :class="{ active: index == activeNavIdx }" ref="navs"
+                    v-for="(item, index) of menus" :key="item.id">{{ item.name }}</li>
+            </ul>
+        </nav>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
