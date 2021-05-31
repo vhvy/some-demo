@@ -145,7 +145,6 @@ window.app = new Vue({
             // 当前item相对于滚动容器的x轴位置
 
             const width = dom.offsetWidth;
-            // left  当前item相对于屏幕左侧的位置
             // width 元素宽度
 
             const centerAbsPosX = scrollLeft + halfScreenWidth;
